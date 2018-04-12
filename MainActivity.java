@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
-
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -137,5 +136,4 @@ public class MainActivity extends AppCompatActivity {
     public void displayMessage() {
         Toast.makeText(this, "You answered " + calculateCorrectAnswers() + " of " + totalQuestions +" Correct!", Toast.LENGTH_LONG).show();
     }
-
  }
