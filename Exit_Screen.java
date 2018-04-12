@@ -21,9 +21,10 @@ public class Exit_Screen extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 startActivity(intent);
                 finish();
+                //Allows later OS version 16+ to fully close out the app instead of going directly back
+                //to the quia page with old data
+                finishAffinity();
             }
         }, 3000);
-
 }
-
 }

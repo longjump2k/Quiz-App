@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -135,7 +136,7 @@ public class MainActivity extends AppCompatActivity {
 
     // method to display the Toast of the final score percentage
     public void displayMessage() {
-        Toast.makeText(this, "You answered " + correctAnswers + " of " + totalQuestions +" Correct!", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "You answered " + calculateCorrectAnswers() + " of " + totalQuestions +" Correct!", Toast.LENGTH_LONG).show();
     }
 
  }
